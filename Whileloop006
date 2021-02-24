@@ -1,0 +1,13 @@
+loop = "Y"
+
+
+while loop == "Y":
+  value = int(input("Enter a number between 10 and 20"))
+  
+  if (value<20) and (value>10):
+    print("Well done")
+    break
+    
+  
+  elif (value <10) and (value >20):
+    print("Try again")
