@@ -1,1 +1,12 @@
+loop = "Y"
+count = 0
 
+
+while loop == "Y":
+  name = str(input("Input the name of somebody you would like to invite"))
+  print(name, "has now been invited")
+  count = count + 1
+  name1 = str(input("Do you want to invite another person? y/n")).upper()
+  if name1 == "N":
+    print("The total amount of people invited is" ,count)
+    break
