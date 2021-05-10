@@ -13,3 +13,10 @@ else:
   cars.append(newCar)
   
 print("In the list =", cars)
+
+cars = []
+
+cars.append(input("Enter car1 >>>"))
+cars.append(input("Enter car2 >>>"))
+cars.append(input("Enter car3 >>>"))
+print(cars)
