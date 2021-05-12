@@ -1,22 +1,16 @@
 cars = []
 
-addName = True
-while addName == True:
+addname = True
+
+while addname == True:
+  newcar = str(input("Enter a car brand or press x to exit"))
   
-  newCar = str(input("Enter a car brand or press x to exit"))
-
-if newCar == "x":
-  print("exiting..")
-  addName = False
-
-else:
-  cars.append(newCar)
+  if newcar == "x":
+    print("Exiting...")
+    addname = False
+    print("In the list =", cars)
   
-print("In the list =", cars)
+  else:
+    cars.append(newcar)
 
-cars = []
 
-cars.append(input("Enter car1 >>>"))
-cars.append(input("Enter car2 >>>"))
-cars.append(input("Enter car3 >>>"))
-print(cars)
