@@ -1,0 +1,9 @@
+people = []
+
+people = str(input("Who would you like to invite?>>>"))
+people.append(people)
+print(people)
+
+newpeople = str(input("Is there anyone else you would like to invite?>>>"))
+people.append(newpeople)
+print(people)
