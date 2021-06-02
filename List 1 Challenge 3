@@ -1,18 +1,19 @@
-names = []
-names.append(input("Enter name1 >>>"))
-names.append(input("Enter name2 >>>"))
-names.append(input("Enter name3 >>>"))
+invite = []
 
-people = (input("Would you like to invite another person? Y or N"))
+for inv in range(1):
+  List = str(input("Who do you want to invite"))
+  List2 = str(input("Who do you want to invite"))
+  List3 = str(input("Who do you want to invite"))
 
-while people == "Y":
-  names.append(input("Enter a name. N to exit"))
+invite.append(List)
+invite.append(List2)
+invite.append(List3)
+print(invite)
 
-if people == "N":
-  print(names)
+ans = input("Do you want to invite more people y or n? >>>")
+if ans == "y":
+  others = input("Who else do you want to invite>>>")
+  invite.append(others)
 
-elif names == "N":
-  print(names)
-  
 else:
-  print(names)
+  print(invite)
